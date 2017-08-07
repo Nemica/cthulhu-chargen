@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cthulhu Character Generator</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<h1>Stats</h1>
+	<ul class="stats">
+		<li>ST: <input id="st" type="number"/> <button class="roll" data-stat="st">Roll!</button></li> <!-- 3w6*5 -->
+		<li>KO: <input id="ko" type="number"/> <button class="roll" data-stat="ko">Roll!</button></li> <!-- 3w6*5 -->
+		<li>MA: <input id="ma" type="number"/> <button class="roll" data-stat="ma">Roll!</button></li> <!-- 3w6*5 -->
+		<li>ER: <input id="er" type="number"/> <button class="roll" data-stat="er">Roll!</button></li> <!-- 3w6*5 -->
+		<li>GE: <input id="ge" type="number"/> <button class="roll" data-stat="ge">Roll!</button></li> <!-- 3w6*5 -->
+		<li>GR: <input id="gr" type="number"/> <button class="roll" data-stat="gr">Roll!</button></li> <!-- (2w6+6)*5 -->
+		<li>IN: <input id="in" type="number"/> <button class="roll" data-stat="in">Roll!</button></li> <!-- (2w6+6)*5 -->
+		<li>BI: <input id="bi" type="number"/> <button class="roll" data-stat="bi">Roll!</button></li> <!-- (2w6+6)*5 -->
+	</ul>
+	<ul class="stats">
+		<li>Glück: <input id="luck" type="number"/> <button class="roll" data-stat="luck">Roll!</button></li> <!-- 3w6*5 -->
+		<li>Alter: <input id="age" type="number"/>
+			<p>Malus: <span id="agemalus">0</span></p>
+			<ul>
+				<li>ST: <input type="number"/></li>
+				<li>KO: <input type="number"/></li>
+				<li>MA: <input type="number"/></li>
+				<li>ER: <input type="number"/></li>
+				<li>GE: <input type="number"/></li>
+				<li>GR: <input type="number"/></li>
+				<li>IN: <input type="number"/></li>
+			</ul>
+			<li>BI: <input type="number" readonly/> <button class="roll" data-stat="luck">Roll! (<span id="agebonus">0</span>)</button></li>
+		</li> <!-- Bonus/Malus blurb -->
+		
+	</ul>
+</body>
+</html>
