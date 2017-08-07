@@ -1,0 +1,97 @@
+{
+	"ageData": {
+		"minAge": 15,
+		"maxAge": 89,
+		"thresholds": [{
+			"max": 19,
+			"agemalus": {
+				"malus": 5, 
+				"malusStats": ["ST", "KO"]
+			},
+			"biRolls": 0,
+			"erMalus": 0,
+			"desc": "Von ST und KO werden insgesamt 5 punkte abgezogen.\nBI wird um 5 Punkte verringert.\nGlück wird 2 mal ausgewürfelt, der höhere Wert behalten"
+		}, {
+			"max": 39,
+			"agemalus": {
+				"malus": 0, 
+				"malusStats": []
+			},
+			"biRolls": 1,
+			"erMalus": 0,
+			"desc": "Es wird 1 Probe zur BI-Verbesserung gemacht."
+		}, {
+			"max": 49,
+			"agemalus": {
+				"malus": 5, 
+				"malusStats": ["ST", "KO", "GE"]
+			},
+			"biRolls": 2,
+			"erMalus": 5,
+			"desc": "Es werden 2 Proben zur BI-Verbesserung gemacht.\nInsgesammt -5 Punkte (beliebige Verteilung) auf ST, KO und GE.\n-5 Punkte auf ER."
+		}, {
+			"max": 59,
+			"agemalus": {
+				"malus": 10, 
+				"malusStats": ["ST", "KO", "GE"]
+			},
+			"biRolls": 3,
+			"erMalus": 10,
+			"desc": "Es werden 3 Proben zur BI-Verbesserung gemacht.\nInsgesammt -10 Punkte (beliebige Verteilung) auf ST, KO und GE.\n-10 Punkte auf ER."
+		}, {
+			"max": 69,
+			"agemalus": {
+				"malus": 20, 
+				"malusStats": ["ST", "KO", "GE"]
+			},
+			"biRolls": 4,
+			"erMalus": 15,
+			"desc": "Es werden 4 Proben zur BI-Verbesserung gemacht.\nInsgesammt -20 Punkte (beliebige Verteilung) auf ST, KO und GE.\n-15 Punkte auf ER."
+		}, {
+			"max": 79,
+			"agemalus": {
+				"malus": 40, 
+				"malusStats": ["ST", "KO", "GE"]
+			},
+			"biRolls": 4,
+			"erMalus": 20,
+			"desc": "Es werden 4 Proben zur BI-Verbesserung gemacht.\nInsgesammt -40 Punkte (beliebige Verteilung) auf ST, KO und GE.\n-20 Punkte auf ER."
+		}, {
+			"max": 89,
+			"agemalus": {
+				"malus": 80, 
+				"malusStats": ["ST", "KO", "GE"]
+			},
+			"biRolls": 4,
+			"erMalus": 25,
+			"desc": "Es werden 4 Proben zur BI-Verbesserung gemacht.\nInsgesammt -80 Punkte (beliebige Verteilung) auf ST, KO und GE.\n-25 Punkte auf ER."
+		}]
+	},
+	"statsData": {
+		"st": {
+			"name": "Stärke",
+			"generationDice": "3w6*5",
+			"thresholds": [{
+				"min": 0,
+				"max": 0,
+				"desc": "Völlige Entkräftung.\nKann nicht aus eigener Kraft stehen oder auch nur eine Tasse Tee heben."
+			}, {
+				"min": 1,
+				"max": 15,
+				"desc": "Schwächling."
+			}, {
+				"min": 16,
+				"max": 50,
+				"desc": "Schwach bis Durchschnittlich stark."
+			}, {
+				"min": 50,
+				"max": 90,
+				"desc": "Die stärksten Menschen denen man im normalem Leben begegnet"
+			}, {
+				"min": 90,
+				"max": 140,
+				"desc": "übermenschlich (Gorilla, Pferd)."
+			}]
+		}
+	};
+}
