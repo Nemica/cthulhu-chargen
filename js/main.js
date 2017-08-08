@@ -9,38 +9,6 @@
 			}
 		}
 
-		var statsData = {
-			st: {
-				name: 'Stärke',
-				generationDice: '3w6*5',
-				thresholds: [{
-					min: 0,
-					max: 0,
-					desc: "Literally bettlägrig."
-				}, {
-					min: 1,
-					max: 10,
-					desc: "Nudelarme."
-				}, {
-					min: 11,
-					max: 35,
-					desc: "Bisschen wimpy aber okay."
-				}, {
-					min: 36,
-					max: 65,
-					desc: "Durchschnittsmensch."
-				}, {
-					min: 66,
-					max: 80,
-					desc: "Muckis."
-				}, {
-					min: 81,
-					max: 99,
-					desc: "Zieht Trucks in der Freizeit."
-				}]
-			}
-		};
-
 		function parseDice(str) {
 			// Initial sanity check (ha!) to prevent unnecessary parsing
 			// You can use both w and d to designate dice
