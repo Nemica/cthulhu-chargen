@@ -10,7 +10,7 @@
 			},
 			"biRolls": 0,
 			"erMalus": 0,
-			"desc": "Von ST und KO werden insgesamt 5 punkte abgezogen.\nBI wird um 5 Punkte verringert.\nGlück wird 2 mal ausgewürfelt, der höhere Wert behalten"
+			"desc": ["Von ST und KO werden insgesamt 5 Punkte abgezogen.", "BI wird um 5 Punkte verringert.", "Glück wird 2 mal ausgewürfelt, der höhere Wert behalten."]
 		}, {
 			"max": 39,
 			"agemalus": {
@@ -19,7 +19,7 @@
 			},
 			"biRolls": 1,
 			"erMalus": 0,
-			"desc": "Es wird 1 Probe zur BI-Verbesserung gemacht."
+			"desc": ["Es wird 1 Probe zur BI-Verbesserung gemacht."]
 		}, {
 			"max": 49,
 			"agemalus": {
@@ -28,7 +28,7 @@
 			},
 			"biRolls": 2,
 			"erMalus": 5,
-			"desc": "Es werden 2 Proben zur BI-Verbesserung gemacht.\nInsgesammt -5 Punkte (beliebige Verteilung) auf ST, KO und GE.\n-5 Punkte auf ER."
+			"desc": ["Es werden 2 Proben zur BI-Verbesserung gemacht.", "Insgesammt -5 Punkte (beliebige Verteilung) auf ST, KO und GE.", "-5 Punkte auf ER."]
 		}, {
 			"max": 59,
 			"agemalus": {
@@ -37,7 +37,7 @@
 			},
 			"biRolls": 3,
 			"erMalus": 10,
-			"desc": "Es werden 3 Proben zur BI-Verbesserung gemacht.\nInsgesammt -10 Punkte (beliebige Verteilung) auf ST, KO und GE.\n-10 Punkte auf ER."
+			"desc": ["Es werden 3 Proben zur BI-Verbesserung gemacht.", "Insgesammt -10 Punkte (beliebige Verteilung) auf ST, KO und GE.", "-10 Punkte auf ER."]
 		}, {
 			"max": 69,
 			"agemalus": {
@@ -46,7 +46,7 @@
 			},
 			"biRolls": 4,
 			"erMalus": 15,
-			"desc": "Es werden 4 Proben zur BI-Verbesserung gemacht.\nInsgesammt -20 Punkte (beliebige Verteilung) auf ST, KO und GE.\n-15 Punkte auf ER."
+			"desc": ["Es werden 4 Proben zur BI-Verbesserung gemacht.", "Insgesammt -20 Punkte (beliebige Verteilung) auf ST, KO und GE.", "-15 Punkte auf ER."]
 		}, {
 			"max": 79,
 			"agemalus": {
@@ -55,7 +55,7 @@
 			},
 			"biRolls": 4,
 			"erMalus": 20,
-			"desc": "Es werden 4 Proben zur BI-Verbesserung gemacht.\nInsgesammt -40 Punkte (beliebige Verteilung) auf ST, KO und GE.\n-20 Punkte auf ER."
+			"desc": ["Es werden 4 Proben zur BI-Verbesserung gemacht.", "Insgesammt -40 Punkte (beliebige Verteilung) auf ST, KO und GE.", "-20 Punkte auf ER."]
 		}, {
 			"max": 89,
 			"agemalus": {
@@ -64,7 +64,7 @@
 			},
 			"biRolls": 4,
 			"erMalus": 25,
-			"desc": "Es werden 4 Proben zur BI-Verbesserung gemacht.\nInsgesammt -80 Punkte (beliebige Verteilung) auf ST, KO und GE.\n-25 Punkte auf ER."
+			"desc": ["Es werden 4 Proben zur BI-Verbesserung gemacht.", "Insgesammt -80 Punkte (beliebige Verteilung) auf ST, KO und GE.", "-25 Punkte auf ER."]
 		}]
 	},
 	"statsData": {
@@ -74,23 +74,23 @@
 			"thresholds": [{
 				"min": 0,
 				"max": 0,
-				"desc": "Völlige Entkräftung.\nKann nicht aus eigener Kraft stehen oder auch nur eine Tasse Tee heben."
+				"desc": ["Völlige Entkräftung.", "Kann nicht aus eigener Kraft stehen oder auch nur eine Tasse Tee heben."]
 			}, {
 				"min": 1,
 				"max": 15,
-				"desc": "Schwächling."
+				"desc": ["Schwächling."]
 			}, {
 				"min": 16,
 				"max": 50,
-				"desc": "Schwach bis Durchschnittlich stark."
+				"desc": ["Schwach bis durchschnittlich stark."]
 			}, {
-				"min": 50,
+				"min": 51,
 				"max": 90,
-				"desc": "Die stärksten Menschen denen man im normalem Leben begegnet"
+				"desc": ["Die stärksten Menschen denen man im normalem Leben begegnet"]
 			}, {
-				"min": 90,
+				"min": 91,
 				"max": 140,
-				"desc": "übermenschlich (Gorilla, Pferd)."
+				"desc": ["Übermenschlich (Gorilla, Pferd)."]
 			}]
 		}
 	};
