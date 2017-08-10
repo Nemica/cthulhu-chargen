@@ -86,11 +86,194 @@
 			}, {
 				"min": 51,
 				"max": 90,
-				"desc": ["Die stärksten Menschen denen man im normalem Leben begegnet"]
+				"desc": ["Die stärksten Menschen, denen man im normalem Leben begegnet."]
 			}, {
 				"min": 91,
 				"max": 140,
 				"desc": ["Übermenschlich (Gorilla, Pferd)."]
+			}]
+		},
+		"ko": {
+			"name": "Konstitution",
+			"generationDice": "3w6*5",
+			"thresholds": [{
+				"min": 0,
+				"max": 0,
+				"desc": ["Tot."]
+			}, {
+				"min": 1,
+				"max": 15,
+				"desc": ["Hinfälig.", "Neigt zu Phasen langer Krankheit.", "Ohne Hilfe wahrscheinlich kaum handlungsfähig."]
+			}, {
+				"min": 16,
+				"max": 50,
+				"desc": ["Schlechte bis durchschnittliche Gesundheit."]
+			}, {
+				"min": 51,
+				"max": 90,
+				"desc": ["Kerngesund und widerstandsfähig."]
+			}, {
+				"min": 91,
+				"max": 140,
+				"desc": ["Übermenschliche Konstitution (Elefant)."]
+			}]
+		},
+		"ma": {
+			"name": "Mana",
+			"generationDice": "3w6*5",
+			"thresholds": [{
+				"min": 0,
+				"max": 0,
+				"desc": ["Seelisch ausgelaugt, willens- und antriebslos.", "Kein magisches Potential."]
+			}, {
+				"min": 1,
+				"max": 15,
+				"desc": ["Willensschwach.", "Lässt sich leicht von anderen dominieren."]
+			}, {
+				"min": 16,
+				"max": 50,
+				"desc": ["Niedrige bis durchschnittliche menschliche magische Veranlagung."]
+			}, {
+				"min": 51,
+				"max": 90,
+				"desc": ["Willensstark und engagiert.", "Potential für Kontakte mit unsichtbaren oder magischen Phänomenen."]
+			}, {
+				"min": 91,
+				"max": 140,
+				"desc": ["Übermenschlich, möglicherweise unirdisch."]
+			}]
+		},
+		"er": {
+			"name": "Erscheinung",
+			"generationDice": "3w6*5",
+			"thresholds": [{
+				"min": 0,
+				"max": 0,
+				"desc": ["So unansehnlich, dass zufällige Betrachter heftig von Furcht, Widerwillen oder Mitleid gepackt werden."]
+			}, {
+				"min": 1,
+				"max": 15,
+				"desc": ["Hässlich, möglicherweise von Geburt an oder durch spätere Verletzungen entstellt."]
+			}, {
+				"min": 16,
+				"max": 50,
+				"desc": ["Durchschnittliche menschliche Erscheinung."]
+			}, {
+				"min": 51,
+				"max": 90,
+				"desc": ["Zählt zu den nettesten Menschen, denen man je begegnet ist.", "Von Natur aus anziehende Persönlichkeit."]
+			}, {
+				"min": 91,
+				"max": 99,
+				"desc": ["Unübertrefflich in Stil und Eleganz."]
+			}]
+		},
+		"ge": {
+			"name": "Geschicklichkeit",
+			"generationDice": "3w6*5",
+			"thresholds": [{
+				"min": 0,
+				"max": 0,
+				"desc": ["Ohne Hilfe zu jeglicher gezielter Bewegung unfähig."]
+			}, {
+				"min": 1,
+				"max": 15,
+				"desc": ["Langsam und unbeholfen.", "Schlechte Feinmotorik."]
+			}, {
+				"min": 16,
+				"max": 50,
+				"desc": ["Leichte Ungeschicklichkeit bis normalmenschliche Geschicklichkeit."]
+			}, {
+				"min": 51,
+				"max": 90,
+				"desc": ["Schnell und gewandt."]
+			}, {
+				"min": 91,
+				"max": 140,
+				"desc": ["Übermenschliche Geschicklichkeit (Tiger)."]
+			}]
+		},
+		"gr": {
+			"name": "Körpergröße",
+			"generationDice": "3w6*5",
+			"thresholds": [{
+				"min": 1,
+				"max": 1,
+				"desc": ["Ein Säugling."]
+			}, {
+				"min": 2,
+				"max": 25,
+				"desc": ["Ein Kind oder sehr kleiner Mensch."]
+			}, {
+				"min": 26,
+				"max": 60,
+				"desc": ["Durchschnittliche menschliche Größe."]
+			}, {
+				"min": 61,
+				"max": 80,
+				"desc": ["Sehr groß, stämmig, übergewichtig."]
+			}, {
+				"min": 81,
+				"max": 150,
+				"desc": ["Pferd, Kuh."]
+			}]
+		},
+		"in": {
+			"name": "Intelligenz",
+			"generationDice": "3w6*5",
+			"thresholds": [{
+				"min": 0,
+				"max": 0,
+				"desc": ["Keinerlei Intelligenz.", "Unfähig, die Welt in irgendeiner Weise zu verstehen."]
+			}, {
+				"min": 1,
+				"max": 15,
+				"desc": ["Lernt langsam.", "Beherrscht nur Grundrechenarten.", "Kann nur einfach geschriebene Texte verstehen."]
+			}, {
+				"min": 16,
+				"max": 50,
+				"desc": ["Unter- bis durchschnittliche menschliche Verstandesgabe."]
+			}, {
+				"min": 51,
+				"max": 90,
+				"desc": ["Schnell von Begriff.", "Vermutlich in mehreren Fremdspracen oder in verschiedenen theoretishen Bezugssystemen gleichermaßen zuhause."]
+			}, {
+				"min": 91,
+				"max": 99,
+				"desc": ["Genie (Einstein, Da Vinci, Tesla...)"]
+			}]
+		},
+		"bi": {
+			"name": "Bildung",
+			"generationDice": "3w6*5",
+			"thresholds": [{
+				"min": 0,
+				"max": 0,
+				"desc": ["Neugeborenes Kind."]
+			}, {
+				"min": 1,
+				"max": 15,
+				"desc": ["In jedem erdenklichen Sinne von vollkommener, umfassender Bildungslosigkeit."]
+			}, {
+				"min": 16,
+				"max": 60,
+				"desc": ["High School/mittlere Reife."]
+			}, {
+				"min": 61,
+				"max": 70,
+				"desc": ["College/Abitur."]
+			}, {
+				"min": 71,
+				"max": 80,
+				"desc": ["Hochschule."]
+			}, {
+				"min": 81,
+				"max": 90,
+				"desc": ["Doktor- oder Professorentitel."]
+			}, {
+				"min": 92,
+				"max": 99,
+				"desc": ["Weltweit anerkannte Autorität in einem Farchgebiet."]
 			}]
 		}
 	}
