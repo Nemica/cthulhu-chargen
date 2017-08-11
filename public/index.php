@@ -3,7 +3,12 @@
 	$config = json_decode(file_get_contents('./config/charsheet-config.json'));
 
 	$attributes = $config->statsData;
-?><!DOCTYPE html>
+
+?>
+<script type="text/javascript">
+	var $config = <?php echo json_encode($config ?: array()); ?>;
+</script>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -24,18 +29,21 @@
 			</ul>
 			<ul class="stats col-md-5">
 				<li>Glück: <input id="luck" type="number"/> <button class="roll" data-stat="luck">Roll!</button></li> <!-- 3w6*5 -->
-				<li>Alter: <input id="age" type="number"/>
-					<p>Malus: <span id="agemalus">0</span></p>
+				<li>Alter: <input id="age" type="number"/> <button class="confirmAge">Bestätigen</button>
+				<li id="ageDesc"></li>
 					<ul>
-						<li>ST: <input type="number"/></li>
-						<li>KO: <input type="number"/></li>
-						<li>MA: <input type="number"/></li>
-						<li>ER: <input type="number"/></li>
-						<li>GE: <input type="number"/></li>
-						<li>GR: <input type="number"/></li>
-						<li>IN: <input type="number"/></li>
+						<p>Malus: <span id="agemalus">0</span></p>
+						<li class="malusST" style="display: none;">ST: <input type="number"/></li>
+						<li class="malusKO" style="display: none;">KO: <input type="number"/></li>
+						<li class="malusMA" style="display: none;">MA: <input type="number"/></li>
+						<li class="malusER" style="display: none;">ER: <input type="number"/></li>
+						<li class="malusGE" style="display: none;">GE: <input type="number"/></li>
+						<li class="malusGR" style="display: none;">GR: <input type="number"/></li>
+						<li class="malusIN" style="display: none;">IN: <input type="number"/></li>
+						<p>Bonus Würfe:</p>
+						<li class ="luckBonusRoll" style="display: none;">Glück Bonus Wurf:<button class="roll" data-stat="luck">Roll!</button></li>
+						<li style="display: none;">BI: <input type="number" readonly/> <button class="roll" data-stat="BI-Steigerung">Roll! (<span id="agebonus">0</span>)</button></li>
 					</ul>
-					<li>BI: <input type="number" readonly/> <button class="roll" data-stat="luck">Roll! (<span id="agebonus">0</span>)</button></li>
 				</li> <!-- Bonus/Malus blurb -->
 				
 			</ul>

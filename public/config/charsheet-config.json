@@ -10,6 +10,7 @@
 			},
 			"biRolls": 0,
 			"erMalus": 0,
+			"luckBonusRoll": true,
 			"desc": ["Von ST und KO werden insgesamt 5 Punkte abgezogen.", "BI wird um 5 Punkte verringert.", "Glück wird 2 mal ausgewürfelt, der höhere Wert behalten."]
 		}, {
 			"max": 39,
