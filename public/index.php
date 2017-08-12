@@ -15,6 +15,7 @@
 	<title>Cthulhu Character Generator</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/dice.js"></script>
 	<script src="js/main.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 </head>
