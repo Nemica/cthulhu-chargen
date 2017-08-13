@@ -1,6 +1,6 @@
 $(function() {
 	var $age = $('#age');
-	var ageData = $config.ageData;
+	var ageData = config.ageData;
 	$('.roll').click(function() {
 		var $this = $(this);
 
@@ -24,7 +24,15 @@ $(function() {
 		}
 
 		if(result > $('#' + stat).val() && $('#' + stat).val() !== undefined) $('#' + stat).val(result).prop('readonly', true);
-		$this.hide();
+
+		var rolls = $this.attr('data-rolls');
+		if(typeof rolls != 'undefined') {
+			rolls--;
+			$this.attr('data-rolls', rolls);
+			if(!rolls) $this.hide();
+		} else {
+			$this.hide();
+		}
 	});
 
 	$('.confirmAge').click(function() {
@@ -42,9 +50,12 @@ $(function() {
 			var characterAge = ageData.thresholds[i];
 
 			for(var malusStat of characterAge.agemalus.malusStats) {
-				$('.malus' + malusStat).toggle();
+				$('.malus[data-stat=' + malusStat + ']').show();
 			}
-			if(characterAge.luckBonusRoll) $('.luckBonusRoll').toggle();
+			if(characterAge.luckRolls) {
+				$('.luckBonusRoll').show();
+				$('.luckBonusRoll .roll').attr('data-rolls', characterAge.luckRolls);
+			}
 			//TODO MALUS LOGIC + BI Upgrade Roll!
 		}
 	});
@@ -68,7 +79,7 @@ $(function() {
 
 	function checkStatsRolled() {
 		var x = true;
-		for(var stat in $config.statsData) {
+		for(var stat in config.statsData) {
 			x = x && $('#' + stat).prop("readonly");
 		}
 		return x && $('#luck').prop("readonly");

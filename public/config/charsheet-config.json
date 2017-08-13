@@ -6,11 +6,12 @@
 			"max": 19,
 			"agemalus": {
 				"malus": 5, 
-				"malusStats": ["ST", "KO"]
+				"malusStats": ["st", "ko"]
 			},
 			"biRolls": 0,
+			"biMalus": 5,
 			"erMalus": 0,
-			"luckBonusRoll": true,
+			"luckRolls": 2,
 			"desc": ["Von ST und KO werden insgesamt 5 Punkte abgezogen.", "BI wird um 5 Punkte verringert.", "Glück wird 2 mal ausgewürfelt, der höhere Wert behalten."]
 		}, {
 			"max": 39,
@@ -25,7 +26,7 @@
 			"max": 49,
 			"agemalus": {
 				"malus": 5, 
-				"malusStats": ["ST", "KO", "GE"]
+				"malusStats": ["st", "ko", "ge"]
 			},
 			"biRolls": 2,
 			"erMalus": 5,
@@ -34,7 +35,7 @@
 			"max": 59,
 			"agemalus": {
 				"malus": 10, 
-				"malusStats": ["ST", "KO", "GE"]
+				"malusStats": ["st", "ko", "ge"]
 			},
 			"biRolls": 3,
 			"erMalus": 10,
@@ -43,7 +44,7 @@
 			"max": 69,
 			"agemalus": {
 				"malus": 20, 
-				"malusStats": ["ST", "KO", "GE"]
+				"malusStats": ["st", "ko", "ge"]
 			},
 			"biRolls": 4,
 			"erMalus": 15,
@@ -52,7 +53,7 @@
 			"max": 79,
 			"agemalus": {
 				"malus": 40, 
-				"malusStats": ["ST", "KO", "GE"]
+				"malusStats": ["st", "ko", "ge"]
 			},
 			"biRolls": 4,
 			"erMalus": 20,
@@ -61,7 +62,7 @@
 			"max": 89,
 			"agemalus": {
 				"malus": 80, 
-				"malusStats": ["ST", "KO", "GE"]
+				"malusStats": ["st", "ko", "ge"]
 			},
 			"biRolls": 4,
 			"erMalus": 25,
