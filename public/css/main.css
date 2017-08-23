@@ -1,7 +1,32 @@
-.form-control.stat-field {
-	width: 60px;
+@font-face {
+  font-family: Anke Print;
+  src: url("Anke Print.woff");
 }
-
-.input-group-addon.roll {
-	width: 30px;
+html,
+body {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+body {
+  background-color: #adc9bb;
+}
+h1,
+h2,
+h3 {
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+.stat-field {
+  width: 50px;
+}
+button.roll {
+  width: 1.7em;
+  height: 1.7em;
+  border: 2px solid #132;
+  background-color: #465;
+  border-radius: 10%;
+}
+input {
+  font-family: "Anke Print";
+  background-color: #dbe7e1;
+  border: 0;
+  border-bottom: 1px #132 dotted;
 }

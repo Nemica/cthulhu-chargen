@@ -4,7 +4,9 @@ $(function() {
 	$('.roll').click(function() {
 		var $this = $(this);
 
-		var stat = $(this).attr('data-stat');
+		var metaStat = $(this).attr('data-stat').split('-');
+		var stat = metaStat[0];
+		var oldResult = $(this).val() || -1;
 		var result = 0;
 
 		switch(stat) {
@@ -23,7 +25,14 @@ $(function() {
 				break;
 		}
 
-		if(result > $('#' + stat).val() && $('#' + stat).val() !== undefined) $('#' + stat).val(result).prop('readonly', true);
+		switch(metaStat[1]) {
+			case 'improve':
+				if(result > oldResult) $('#' + stat).val(result);
+				break;
+			default:
+				if(oldResult == -1) $('#' + stat).val(result);
+				break;
+		}
 
 		var rolls = $this.attr('data-rolls');
 		if(typeof rolls != 'undefined') {
@@ -80,9 +89,13 @@ $(function() {
 	function checkStatsRolled() {
 		var x = true;
 		for(var stat in config.statsData) {
-			x = x && $('#' + stat).prop("readonly");
+			x = x && $('#' + stat).val();
 		}
-		return x && $('#luck').prop("readonly");
+		return x;
+	}
+
+	function biRoll() {
+		rollDice(10);
 	}
 });
 

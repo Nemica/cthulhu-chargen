@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Anke Print;
+    src: url("Anke Print.woff");
+}
+
+@borderColor: #132;
+@diceColor: #465;
+@bgColor: lighten(@diceColor, 40%);
+@inputColor: lighten(@diceColor, 55%);
+@simpleFonts: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+@fancyFonts: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+
+html, body {
+	font-family: @simpleFonts;
+}
+
+body {
+	background-color: @bgColor;
+}
+
+h1, h2, h3 {
+	font-family: @fancyFonts;
+}
+
+.stat-field {
+	width: 50px;
+}
+
+button.roll {
+	width: 1.7em;
+	height: 1.7em;
+	border: 2px solid @borderColor;
+	background-color: @diceColor;
+	border-radius: 10%;
+}
+
+input {
+	font-family: "Anke Print";
+	background-color: @inputColor;
+	border: 0;
+	border-bottom: 1px @borderColor dotted;
+}
