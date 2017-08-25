@@ -3,34 +3,47 @@ $(function() {
 	var ageData = config.ageData;
 	$('.roll').click(function() {
 		var $this = $(this);
+		var $field = $this.parent().find('.stat-field');
+		var $blurb = $this.parent().find('.blurb');
 
-		var metaStat = $(this).attr('data-stat').split('-');
+		var metaStat = $this.attr('data-stat').split('-');
 		var stat = metaStat[0];
-		var oldResult = $(this).val() || -1;
+		var oldResult = $field.val() || -1;
 		var result = 0;
 
-		switch(stat) {
-			case 'st':
-			case 'ko':
-			case 'ma':
-			case 'er':
-			case 'ge':
-			case 'luck':
-				result = 5 * rollDice(6, 3);
-				break;
-			case 'gr':
-			case 'in':
-			case 'bi':
-				result = 5 * (6 + rollDice(6, 2));
-				break;
+		if(metaStat[1] != 'improve') {
+			// This will be much shorter as soon as SOMEONE finishes the dice roll parser (TODO)
+			switch(stat) {
+				case 'st':
+				case 'ko':
+				case 'ma':
+				case 'er':
+				case 'ge':
+				case 'luck':
+					result = 5 * rollDice(6, 3);
+					break;
+				case 'gr':
+				case 'in':
+				case 'bi':
+					result = 5 * (6 + rollDice(6, 2));
+					break;
+			}
 		}
 
 		switch(metaStat[1]) {
+			case 'high':
+				if(result > oldResult) {
+					$field.val(result);
+					$blurb.text('');
+				} else {
+					$blurb.text('Keine Verbesserung.');
+				}
+				break;
 			case 'improve':
-				if(result > oldResult) $('#' + stat).val(result);
+				impRoll(oldResult);
 				break;
 			default:
-				if(oldResult == -1) $('#' + stat).val(result);
+				if(oldResult == -1) $field.val(result);
 				break;
 		}
 
@@ -41,6 +54,9 @@ $(function() {
 			if(!rolls) $this.hide();
 		} else {
 			$this.hide();
+			setTimeout(function() {
+				$blurb.hide();
+			}, 3000);
 		}
 	});
 
@@ -92,10 +108,6 @@ $(function() {
 			x = x && $('#' + stat).val();
 		}
 		return x;
-	}
-
-	function biRoll() {
-		rollDice(10);
 	}
 });
 
