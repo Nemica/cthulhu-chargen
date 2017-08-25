@@ -31,7 +31,7 @@
 			<?php endforeach; ?>
 			</ul>
 			<ul class="stats">
-				<li>Alter: <input id="age" type="number"/> <button class="confirmAge">Bestätigen</button>
+				<li>Alter: <input id="age" type="number" name="stats[age]"/> <button class="confirmAge">Bestätigen</button>
 				<li id="ageDesc"></li>
 					<ul>
 						<p>Malus: <span id="agemalus">0</span></p>
@@ -43,7 +43,7 @@
 						<li style="display: none;">BI: <input type="number" readonly/> <button class="roll" data-stat="bi-extra">Roll! (<span id="agebonus">0</span>)</button></li>
 					</ul>
 				</li> <!-- Bonus/Malus blurb -->
-				<li>Glück: <input id="luck" type="number"/> <button class="roll" data-stat="luck"></button></li> <!-- 3w6*5 -->
+				<li>Glück: <input id="luck" type="number" name="stats[luck]"/> <button class="roll" data-stat="luck"></button></li> <!-- 3w6*5 -->
 			</ul>
 		</div>
 	</div>
