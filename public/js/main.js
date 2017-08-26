@@ -111,4 +111,17 @@ $(function() {
 	}
 });
 
+function restoreForm() {
+	if(localStorage.formData) {
+		try {
+			var data = JSON.parse(localStorage.formData);
+		} catch(e) {
+			localStorage.removeItem('formData');
+			return false;
+		}
 
+		Object.keys(data).forEach(function(field) {
+			$('[name="' + field + '"]').val(data[field]);
+		});
+	}
+}
